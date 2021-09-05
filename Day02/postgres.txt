@@ -1,0 +1,37 @@
+//entering the postgres
+psql -U postgres
+//create user
+CREATE USER devsnest WITH PASSWORD "password";
+//create database
+CREATE DATABASE devs;
+//give permissiion
+GRANT ALL PRIVILEGES ON DATABASE devs to devsnest;
+//check all database
+\l
+//delete database
+DROP DATABASE devs;
+//connect database
+\c devs;
+//create table
+CREATE TABLE COMPANY(
+    ID INT PRIMARY KEY NOT NULL,
+    NAME CHAR[50],
+    AGE INT ,
+    ADDRESS TEXT
+);
+//CHECK TABLE
+\d
+\d company
+//create schema
+CREATE SCHEMA mySchema;
+//create table in schema
+CREATE TABLE mySchema.student(
+    ID INT NOT NULL,
+    NAME VARCHAR[20],
+    SALARY DECIMAL(18,2),
+    PRIMARY KEY(ID)
+);
+//drop schema
+DROP SCHEMA mySchema CASCADE;
+//insert data
+INSERT INTO mySchema.STUDENT(ID,NAME,SALARY) VALUES(1,"viniket",3000.00);

@@ -1,0 +1,40 @@
+//install redis
+apt-get redis
+//entering redis in cmd
+redis-cli
+//set the key-value
+SET name viniket
+//get the value
+GET name
+//delete value
+DEL name
+//exist the key
+EXISTS name
+//list of key
+KEYS *
+//delete all KEYS
+FLUSHALL
+//clear the screen
+clear
+//check the expiry of key
+ttl name
+//set the expiry
+expire name 10
+//set key with expiry
+setex name 10 viniket
+//redis with array
+lpush age 10
+rpush age 20
+LRANGE age 0 -1
+lpop age
+rpop age
+//redis with set
+SADD city "delhi"
+SADD city "surat"
+SMEMBERS city
+//redis with object
+HSET person name viniket
+HGET person name
+HGETALL person
+HDEL person name
+HEXISTS person name
