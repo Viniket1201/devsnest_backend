@@ -1,0 +1,37 @@
+     ********alternatives of REST*******
+1. GraphQL APIs:-
+    * checkBased on tree data model.
+    * checkThe most mature alternative to rest at the moment.
+    * checkClients fetch data from a single endpoint.
+    * checkClients make fewer more efficient requests.
+    * checkNo underfetching or overfetching client requests.
+    * checkEasier error handling with verbose error messages.
+    * checkAccomodates faster iteration cycles.
+    * checkMutations, fragments and type system create high UX.
+    * checkReduces time to market by giving developers most for less.
+    * checkDoes not take advantage of HTTP caching.
+2. Falcor APIs:-
+    * checkBased on graph data model.
+    * checkFalcor is the most dynamic alternative at the moment.
+    * checkRetains the idea of a path from REST.
+    * checkRetains the idea of references from REST.
+    * checkGood fit for data streaming apps.
+    * checkGood fit for live updates apps.
+    * checkEasy caching and data consistency.
+3. gRPC APIs:-
+    * checkAccepts and return Protobuf messages.
+    * checkUses the HTTP/2 protocol.
+    * checkUses programming language syntax with messages.
+    * checkA good fit for data streaming.
+    * checkProtobuf, unlike JSON, requires a message format.
+    * checkA perfect for for microservices architectures.
+    * checkNot as mature or widely supported.
+    * checkgRPC Gateway uses REST which erodes perceived benefits.
+4. JSON-Pure APIs:-
+    * checkUse a single transmission method to send a request.
+    * checkSeparate data from transmission
+    * checkOnly one response code to confirm receipt
+    * checkEasy to debug, payloads have domain-specific vocabulary
+    * checkCan be shared between transmission channels
+    * checkNot statically typed.
+5. oData APIs 
